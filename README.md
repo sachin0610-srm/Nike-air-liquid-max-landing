@@ -4,6 +4,10 @@ This is my first premium website built fully through vibe coding.
 
 I wanted to create something that feels like a real high-end product launch page, not just a basic landing page. The result is a Nike Air Liquid Max inspired website with cinematic visuals, smooth scroll storytelling, 3D motion, cursor interaction, and a premium dark product-showcase style.
 
+## Live Demo
+
+https://nike-air-khaki.vercel.app
+
 ## Tools Used
 
 - Codex
