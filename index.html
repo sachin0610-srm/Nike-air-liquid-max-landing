@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nike Air Liquid Max - Scroll Story Prototype</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer/build/spline-viewer.js"></script>
+  </head>
+  <body>
+    <div id="dotted-surface" aria-hidden="true"></div>
+    <div id="cursor-spotlight" aria-hidden="true"></div>
+
+    <header class="site-header" aria-label="Primary">
+      <a class="brand" href="#top" aria-label="Nike Air Liquid Max home">NIKE</a>
+      <nav class="nav-links" aria-label="Product sections">
+        <a href="#design">Design</a>
+        <a href="#air">Air</a>
+        <a href="#spline">3D</a>
+        <a href="#drop">Drop</a>
+      </nav>
+      <a class="header-cta" href="https://www.nike.com/launch" rel="noreferrer">SNKRS</a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero-media"
+          src="https://media.about.nike.com/img/a296d26f-3d07-47dc-a3be-899476735ba6/nike-air-liquid-max-1.jpg?m=eyJlZGl0cyI6eyJqcGVnIjp7InF1YWxpdHkiOjEwMH0sIndlYnAiOnsicXVhbGl0eSI6MTAwfSwiZXh0cmFjdCI6eyJsZWZ0IjowLCJ0b3AiOjAsIndpZHRoIjozMjAwLCJoZWlnaHQiOjIxMzR9LCJyZXNpemUiOnsid2lkdGgiOjM4NDB9fX0%3D&s=5188d34931f3f911893afd3c31fe720567b2ff92511ac8c2c95e3ccfe867bab9"
+          alt="Nike Air Liquid Max hovering over a reflective surface"
+        />
+        <div class="hero-scrim"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Air Max, re-formed</p>
+          <h1 id="hero-title">Nike Air Liquid Max</h1>
+          <p class="hero-copy">
+            A low-profile silhouette with point-loaded Air, layered texture, and a finish built to move like light.
+          </p>
+          <div class="hero-actions" aria-label="Product actions">
+            <a class="primary-action" href="#drop">Set the drop</a>
+            <a class="secondary-action" href="#story">Enter the story</a>
+          </div>
+        </div>
+        <div class="scroll-cue" aria-hidden="true">
+          <span></span>
+          <span></span>
+        </div>
+      </section>
+
+      <section id="story" class="story-shell" aria-label="Nike Air Liquid Max scroll story">
+        <div class="story-visual" aria-hidden="true">
+          <img
+            id="floating-shoe"
+            src="https://media.about.nike.com/img/a296d26f-3d07-47dc-a3be-899476735ba6/nike-air-liquid-max-1.jpg?m=eyJlZGl0cyI6eyJqcGVnIjp7InF1YWxpdHkiOjEwMH0sIndlYnAiOnsicXVhbGl0eSI6MTAwfSwiZXh0cmFjdCI6eyJsZWZ0IjowLCJ0b3AiOjAsIndpZHRoIjozMjAwLCJoZWlnaHQiOjIxMzR9LCJyZXNpemUiOnsid2lkdGgiOjM4NDB9fX0%3D&s=5188d34931f3f911893afd3c31fe720567b2ff92511ac8c2c95e3ccfe867bab9"
+            alt=""
+          />
+          <div class="air-map">
+            <span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+
+        <div class="story-copy">
+          <article id="design" class="story-step reveal">
+            <p class="chapter">01 / Texture</p>
+            <h2>Printed in layers. Seen in motion.</h2>
+            <p>
+              The upper uses three-layer textured printing, giving the shoe a unified read from distance and a tactile hit up close.
+            </p>
+          </article>
+
+          <article id="air" class="story-step reveal">
+            <p class="chapter">02 / Air</p>
+            <h2>Air only where the foot asks for it.</h2>
+            <p>
+              Point-loaded Air sits underfoot with negative space around it, keeping the ride soft, smooth, and intentionally low.
+            </p>
+          </article>
+
+          <article class="story-step reveal">
+            <p class="chapter">03 / Color</p>
+            <h2>Warning-signal green. Chrome flash.</h2>
+            <p>
+              The launch colorway uses dramatic green hues, a chrome Swoosh, and a tinted translucent outsole for a sharp Air Max break.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="detail-band" aria-label="Product details">
+        <div class="detail-media reveal">
+          <img
+            src="https://media.about.nike.com/img/a837373c-09cc-45b5-9e95-049405e12359/nike-air-liquid-max-andy-caine-quote.jpg?m=eyJlZGl0cyI6eyJqcGVnIjp7InF1YWxpdHkiOjEwMH0sIndlYnAiOnsicXVhbGl0eSI6MTAwfSwiZXh0cmFjdCI6eyJsZWZ0IjowLCJ0b3AiOjAsIndpZHRoIjoyMDAwLCJoZWlnaHQiOjI1MDB9LCJyZXNpemUiOnsid2lkdGgiOjM4NDB9fX0%3D&s=e0acc71a0ddd8c07b49957c197f0b2a38d00446fbfd52e21e201607a4faee283"
+            alt="Close-up Nike Air Liquid Max texture and Air sole"
+          />
+        </div>
+        <div class="detail-copy reveal">
+          <p class="eyebrow">System / sensation</p>
+          <h2>Science to art, then back to street level.</h2>
+          <p>
+            This concept page treats the product like a kinetic object: close crops, sticky product focus, and text that appears only when the scroll stage earns it.
+          </p>
+          <dl class="spec-grid">
+            <div>
+              <dt>Upper</dt>
+              <dd>Low profile mesh</dd>
+            </div>
+            <div>
+              <dt>Print</dt>
+              <dd>Three-layer texture</dd>
+            </div>
+            <div>
+              <dt>Ride</dt>
+              <dd>Point-loaded Air</dd>
+            </div>
+            <div>
+              <dt>Finish</dt>
+              <dd>Chrome and translucent</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section id="spline" class="spline-section" aria-labelledby="spline-title">
+        <div class="spline-stage reveal">
+          <div class="stage-spotlight" aria-hidden="true"></div>
+          <div class="spline-copy">
+            <p class="eyebrow">Interactive layer</p>
+            <h2 id="spline-title">Cursor energy, 3D presence.</h2>
+            <p>
+              A Spline scene sits beside the product story, with cursor-following light and a dotted field that keeps the page feeling alive.
+            </p>
+          </div>
+          <div class="spline-frame" aria-label="Interactive 3D scene">
+            <spline-viewer
+              url="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
+              loading-anim-type="spinner-small-dark"
+            ></spline-viewer>
+            <div class="spline-fallback">
+              <span></span>
+              <p>3D scene loading</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="drop" class="drop-section" aria-labelledby="drop-title">
+        <div class="drop-inner reveal">
+          <p class="eyebrow">March 26 / SNKRS</p>
+          <h2 id="drop-title">Built to stand out before the first step.</h2>
+          <p>
+            Set launch notifications on SNKRS and watch the Air Max line take a low, fluid turn.
+          </p>
+          <a class="primary-action" href="https://www.nike.com/launch" rel="noreferrer">Open SNKRS</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Unofficial local prototype using Nike Newsroom source material.</p>
+      <a href="https://about.nike.com/en/newsroom/releases/nike-air-liquid-max-merges-superior-comfort-and-air-max-heritage" rel="noreferrer">Source</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
